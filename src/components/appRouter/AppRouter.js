@@ -14,6 +14,7 @@ const AppRouter = () => {
     <div>
       <Navbar />
       <PrivateRouter auth={auth} exact path="/" component={Home} />
+      <PrivateRouter auth={auth} exact path="/recipeapp" component={Home} />
       <PrivateRouter auth={auth} exact path="/details" component={Details} />
       <PrivateRouter auth={auth} exact path="/about" component={About} />
     </div>

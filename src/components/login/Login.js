@@ -17,10 +17,11 @@ const Login = ({ setAuth, auth }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setAuth(!auth);
-    history.push("/");
+    history.push("/recipeapp");
   };
   return (
     <LoginContainer>
+      <p>you can enter random username and password!</p>
       <FormContainer>
         <StyledImg src={mealSvg} alt="meal" />
         <Header>erolFood</Header>
